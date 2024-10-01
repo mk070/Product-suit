@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saasbox - Multipurpose HTML Template for Saas &amp; Agency</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/core-img/favicon.ico" type="image/x-icon">
+    <script src="js/script.js"></script>
+
+    <!-- All CSS Stylesheet-->
+    <link rel="stylesheet" href="css/all-css-libraries.css">
+    <!-- Core Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        .active-filter {
+            background-color: #ffc107; /* Active background color */
+            color: white; /* Active text color */
+            transition: background-color 0.3s, transform 0.3s;
+            transform: scale(1.05);
+        }
+
+        .filter-btn {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: transparent; /* Inactive background color */
+            border: 1px solid #ffc107; /* Border for inactive buttons */
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 20px;
+            color: black; /* Inactive text color */
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .filter-btn:hover {
+            background-color: #ffc107; /* Hover effect */
+            color: white; /* Text color on hover */
+        }
+
+
+
+        .hidden {
+            display: none;
+        }
+
+        .buttons-filter {
+            border-radius: 24px;
+            padding: 4px;
+            background-color: rgb(254, 252, 252);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Area-->
+    <header class="header-area">
+        <nav class="navbar navbar-expand-lg sticky-top shadow p-4 px-4 bg-white rounded-pill mt-3 mx-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Navbar Brand -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img class="logo-navbar" src="img/core-img/SNS iHub - T-Shirt - Logo 2.png" width="100px" alt="">
+                </a>
+    
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="saasboxNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-weight-bold hover-blue" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-weight-bold hover-blue" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-weight-bold hover-blue" href="Product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-weight-bold hover-blue" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="breadcrumb-wrapper breadcrumb-bg-light">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <div class="breadcrumb-content">
+                <h2 class="breadcrumb-title">Products</h2>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="demo-show" id="explore">
+            <div class="container">
+                <div class="row justify-content-center mb-4 mt-4">
+                    <div class="buttons-filter col-12 col-sm-10 col-md-9 col-lg-8 col-xxl-7">
+                        <button class="filter-btn" onclick="filterItems('all', this)">All</button>
+                        <button class="filter-btn" onclick="filterItems('category1', this)">Category 1</button>
+                        <button class="filter-btn" onclick="filterItems('category2', this)">Category 2</button>
+                        <button class="filter-btn" onclick="filterItems('category3', this)">Category 3</button>
+                        <button class="filter-btn" onclick="filterItems('category4', this)">Category 4</button>
+                    </div>
+                </div>
+            </div>
+        <div class="container">
+            <div class="row g-5 demo-preview-area justify-content-center">
+
+                <div class="col-12 col-md-6 filter-item category1">
+                    <div class="single-preview-area text-center">
+                        <a href="newsletter.html" target="_blank"><img src="img/code.jpg" alt=""></a>
+                        <h5 class="mb-0 mt-4">Code Migration</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 filter-item category2">
+                    <div class="single-preview-area text-center">
+                        <a href="mech.html" target="_blank"><img src="img/8.png" alt=""></a>
+                        <h5 class="mb-0 mt-4">Mechanical: Vision Analytics</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 filter-item category3">
+                    <div class="single-preview-area text-center">
+                        <a href="civil.html" target="_blank"><img src="img/civil.jpg" alt=""></a>
+                        <h5 class="mb-0 mt-4">Civil plan - Material Breakdown</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 filter-item category4">
+                    <div class="single-preview-area text-center">
+                        <a href="address.html" target="_blank"><img src="img/address.jpg" alt=""></a>
+                        <h5 class="mb-0 mt-4">Address Normalization</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 filter-item category1">
+                    <div class="single-preview-area text-center">
+                        <a href="bill.html" target="_blank"><img src="img/bill.jpg" alt=""></a>
+                        <h5 class="mb-0 mt-4">Bill Extraction and Aggregation</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 filter-item category2">
+                    <div class="single-preview-area text-center">
+                        <a href="visual.html" target="_blank"><img src="img/datavisualization.jpg" alt=""></a>
+                        <h5 class="mb-0 mt-4">Data Visualization</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 filter-item category3">
+                    <div class="single-preview-area text-center">
+                        <a href="project.html" target="_blank"><img src="img/10.png" alt=""></a>
+                        <h5 class="mb-0 mt-4">Project Conversion</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 filter-item category4">
+                    <div class="single-preview-area text-center">
+                        <a href="data.html" target="_blank"><img src="img/9.png" alt=""></a>
+                        <h5 class="mb-0 mt-4">Data Profiling</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 filter-item category1">
+                    <div class="single-preview-area text-center">
+                        <a href="object.html" target="_blank"><img src="img/OBJ.PNG.jpg" alt=""></a>
+                        <h5 class="mb-0 mt-4">Image Recognition and Object Detection</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 filter-item category3">
+                    <div class="single-preview-area text-center">
+                        <a href="object.html" target="_blank"><img src="img/newspaper.jpg" alt=""></a>
+                        <h5 class="mb-0 mt-4">NewPaper Extraction</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-120 d-block"></div>
+    <!-- Footer Area -->
+    <footer class="bg-white text-center text-dark py-3">
+        <div class="container">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+          <p>
+            <a href="#" class="text-dark">Privacy Policy</a> |
+            <a href="#" class="text-dark">Terms of Service</a>
+          </p>
+          <div class="mt-2">
+            <a href="#" class="text-dark mx-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-dark mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark mx-2"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+    <script src="js/all-js-libraries.js"></script>
+    <script>
+        function filterItems(category, button) {
+            const items = document.querySelectorAll('.filter-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+            
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active-filter'));
+            
+            button.classList.add('active-filter');
+        }
+    </script>
+</body>
+</html>
